@@ -32,6 +32,13 @@
   background: var(--cor-9);
 }
 
+@media (max-width: 600px) {
+  .botao {
+    padding: 12px 16px;
+    font-size: 1rem;
+  }
+}
+
 .link {
   display: inline-block;
   color: var(--cor-p1);
@@ -42,20 +49,34 @@
 .link::after {
   content: "";
   display: block;
-  height: 4px;
   width: 100%;
-  background-color: currentColor; /* Herda a cor do elemento pai */
+  height: 4px;
+  background-color: currentColor;
 }
 
 .link:hover {
   color: var(--cor-0);
 }
 
-/* Responsivo 600px */
+/* titulo internas */
+.titulo-bg {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--cor-11);
+}
 
-@media (max-width: 600px) {
-  .botao a {
-    padding: 12px 16px;
+.titulo p {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 800px) {
+  .titulo-bg {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .titulo p {
     font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
   }
 }
