@@ -43,26 +43,16 @@
   content: "”";
 }
 
-/* Responsivo 800px */
-
 @media (max-width: 800px) {
   .depoimento {
     grid-template-columns: 1fr;
     text-align: center;
   }
-
-  .depoimento-conteudo {
-    padding: 40px 20px;
-    justify-self: center;
-  }
-
-  .parceiros li {
-    padding: 16px;
-    display: flex;
-    border-left: 2px solid var(--cor-2);
-  }
-
   .depoimento img {
     max-height: 200px;
+  }
+  .depoimento-conteudo {
+    padding: 40px 20px;
+    margin: auto;
   }
 }
